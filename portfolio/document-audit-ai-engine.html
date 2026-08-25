@@ -1,271 +1,304 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Case study: self-hosted LLM document auditing engine running on leased GPU servers, engineered by Vassu Infotech." />
-  <title>LLM Document Auditing Case Study | Vassu Infotech</title>
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://vassuinfotech.com/portfolio/document-audit-ai-engine.html" />
-  <meta property="og:title" content="LLM Document Auditing Case Study | Vassu Infotech" />
-  <meta property="og:description" content="Case study: self-hosted LLM document auditing engine running on leased GPU servers, engineered by Vassu Infotech." />
-  <meta property="og:image" content="https://vassuinfotech.com/images/logo.jpg" />
-  <meta property="og:locale" content="en_IN" />
-  <meta property="og:site_name" content="Vassu Infotech" />
+<!doctype html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1893RGH1FW"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-1893RGH1FW");</script>
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xwyxun7vj0");</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Case study: Automated financial document classification & OCR extraction engine processing 500,000+ monthly invoices on high-density GPU compute racks by Vassu Infotech." />
+    <title>Enterprise Banking AI Document Audit &amp; OCR Case Study | Vassu Infotech</title>
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="LLM Document Auditing Case Study | Vassu Infotech" />
-  <meta name="twitter:description" content="Case study: self-hosted LLM document auditing engine running on leased GPU servers, engineered by Vassu Infotech." />
-  <meta name="twitter:image" content="https://vassuinfotech.com/images/logo.jpg" />
-<link rel="icon" type="image/x-icon" href="../images/logo.jpg" />
-  <link rel="canonical" href="https://vassuinfotech.com/portfolio/document-audit-ai-engine.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vassuinfotech.com/portfolio/document-audit-ai-engine.html" />
+    <meta property="og:title" content="Enterprise Banking AI Document Audit &amp; OCR Case Study | Vassu Infotech" />
+    <meta property="og:description" content="Automated financial document classification & OCR extraction engine processing 500,000+ monthly invoices on high-density GPU compute racks." />
+    <meta property="og:image" content="https://vassuinfotech.com/images/software_services_hub.jpg" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="Vassu Infotech" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.jpg" />
+    <link rel="canonical" href="https://vassuinfotech.com/portfolio/document-audit-ai-engine.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css?v=4.0.0" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            vassu: {
-              emerald: '#059669',
-              teal: '#0d9488',
-              cyan: '#0284c7',
-              amber: '#d97706',
-              slate: '#0f172a'
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "TechArticle",
+            "headline": "AI Document Audit Engine for Banking Case Study",
+            "description": "Enterprise document processing platform handling 500,000+ monthly invoices with 99.4% accuracy on dedicated NVIDIA GPU compute clusters.",
+            "author": {
+              "@type": "Organization",
+              "name": "Vassu Infotech"
             }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vassuinfotech.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://vassuinfotech.com/portfolio.html" },
+              { "@type": "ListItem", "position": 3, "name": "AI Document Audit Engine", "item": "https://vassuinfotech.com/portfolio/document-audit-ai-engine.html" }
+            ]
           }
-        }
+        ]
       }
-    }
-  </script>
-  <link rel="stylesheet" href="../css/style.css" />
+    </script>
+  </head>
 
-  <!-- Organization + BreadcrumbList + Article Schema -->
-  <script type="application/ld+json">[{
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "@id": "https://vassuinfotech.com/#organization",
-      "name": "Vassu Infotech",
-      "url": "https://vassuinfotech.com/",
-      "logo": "https://vassuinfotech.com/images/logo.jpg"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vassuinfotech.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://vassuinfotech.com/portfolio.html" },
-        { "@type": "ListItem", "position": 3, "name": "LLM Document Auditing Case Study", "item": "https://vassuinfotech.com/portfolio/document-audit-ai-engine.html" }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "LLM-Powered Document Auditing Engine",
-      "description": "Case study: self-hosted LLM document auditing engine running on leased GPU servers, engineered by Vassu Infotech.",
-      "author": { "@id": "https://vassuinfotech.com/#organization" },
-      "publisher": { "@id": "https://vassuinfotech.com/#organization" },
-      "mainEntityOfPage": "https://vassuinfotech.com/portfolio/document-audit-ai-engine.html",
-      "datePublished": "2025-06-10"
-    }]</script>
-</head>
+  <body>
+    <div id="scroll-progress-bar"></div>
 
-<body class="bg-slate-50 text-slate-800 bg-ambient-light antialiased">
-
-  <!-- Top Announcement Bar -->
-  <div class="bg-slate-100/90 border-b border-slate-200 py-2 px-4 text-xs font-medium text-slate-600">
-    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-      <div class="flex items-center gap-4">
-        <span class="inline-flex items-center gap-1.5 text-emerald-800 font-semibold bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-300">
-          <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-          Case study active
-        </span>
-        <span class="hidden sm:inline-block text-slate-600">📍 Bodakdev, Ahmedabad, Gujarat, India</span>
-      </div>
-      <div class="flex items-center gap-5">
-        <a href="tel:+919173743336" class="hover:text-emerald-700 transition-colors flex items-center gap-1.5 font-medium">
-          <i class="fa-solid fa-phone text-emerald-600"></i> +91 9173743336
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header / Navigation -->
-  <header class="sticky top-0 z-50 glass-nav-light">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="../index.html" class="flex items-center gap-3 group">
-        <img src="../images/logo.jpg" alt="Vassu Infotech Logo" class="h-12 w-auto rounded-xl shadow-md border border-slate-200 group-hover:scale-105 transition-transform" />
-        <div>
-          <span class="text-xl font-bold font-heading tracking-tight text-slate-900 group-hover:text-emerald-700 transition-colors">VASSU INFOTECH</span>
-          <span class="block text-[10px] tracking-widest text-emerald-700 uppercase font-semibold">Enterprise Hardware & Software</span>
-        </div>
-      </a>
-
-            <nav class="hidden md:flex items-center gap-1 xl:gap-1.5 text-sm font-semibold">
-        <a href="../index.html" class="nav-link-premium px-3 py-2 rounded-lg text-slate-600 hover:text-emerald-700 hover:bg-emerald-50 transition-colors">Home</a>
-                <div class="relative group">
-          <a href="../services.html" class="nav-link-premium px-3 py-2 rounded-lg text-slate-600 hover:text-emerald-700 hover:bg-emerald-50 transition-colors">Services <i class="fa-solid fa-chevron-down text-[9px] transition-transform duration-200 group-hover:rotate-180"></i></a>
-          <div class="absolute left-0 top-full pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-200 z-50">
-            <div class="bg-white rounded-2xl border border-slate-200 shadow-xl p-2 w-64">
-              <a href="../services/server-rental-ahmedabad.html" class="block px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Server Rentals <span class="block text-[10px] font-normal text-slate-400 mt-0.5">Dell, HPE & Lenovo leasing</span></a>
-              <a href="../services/gpu-server-rental-for-ai.html" class="block px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">GPU AI & LLM Compute <span class="block text-[10px] font-normal text-slate-400 mt-0.5">NVIDIA RTX · A100 · H100</span></a>
-              <a href="../services/custom-software-development.html" class="block px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Custom Software <span class="block text-[10px] font-normal text-slate-400 mt-0.5">SaaS, portals & APIs</span></a>
-              <a href="../services/cloud-migration-devops.html" class="block px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Cloud & DevOps <span class="block text-[10px] font-normal text-slate-400 mt-0.5">AWS, Azure, Kubernetes</span></a>
-            </div>
-          </div>
-        </div>
-                <div class="relative group">
-          <a href="../portfolio.html" class="nav-link-premium nav-link-premium-active px-3 py-2 rounded-lg font-bold flex items-center gap-1.5">Portfolio <i class="fa-solid fa-chevron-down text-[9px] transition-transform duration-200 group-hover:rotate-180"></i></a>
-          <div class="absolute left-0 top-full pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-200 z-50">
-            <div class="bg-white rounded-2xl border border-slate-200 shadow-xl p-2 w-64">
-              <a href="../portfolio/fintech-virtualization-deployment.html" class="block px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Fintech Virtualization <span class="block text-[10px] font-normal text-slate-400 mt-0.5">64-node Dell cluster · GIFT City</span></a>
-              <a href="../portfolio/document-audit-ai-engine.html" class="block px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">LLM Document Audit AI <span class="block text-[10px] font-normal text-slate-400 mt-0.5">Self-hosted GPU inference</span></a>
-            </div>
-          </div>
-        </div>
-        <a href="../faq.html" class="nav-link-premium px-3 py-2 rounded-lg text-slate-600 hover:text-emerald-700 hover:bg-emerald-50 transition-colors">FAQ</a>
-        <a href="../compliance-and-security.html" class="nav-link-premium px-3 py-2 rounded-lg text-slate-600 hover:text-emerald-700 hover:bg-emerald-50 transition-colors">Compliance</a>
-        <a href="../contact-us.html" class="nav-link-premium px-3 py-2 rounded-lg text-slate-600 hover:text-emerald-700 hover:bg-emerald-50 transition-colors">Contact Us</a>
+    <header class="nav"><div class="nav-inner">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.jpg" alt="Vassu Infotech" /><span>Vassu <span class="nav-logo-accent">Infotech</span></span></a>
+      <nav class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../services.html" class="nav-link">Solutions &amp; Services</a>
+        <a href="../portfolio.html" class="nav-link active">Projects</a>
+        <a href="../compliance-and-security.html" class="nav-link">Compliance</a>
+        <a href="../faq.html" class="nav-link">FAQ</a>
+        <a href="../contact-us.html" class="nav-link">Contact</a>
       </nav>
+      <div style="display:flex;align-items:center;gap:12px">
+        <a href="../contact-us.html" class="nav-cta">Request a Proposal &ensp;<i class="fa-solid fa-arrow-right" style="font-size:10px"></i></a>
+        <button id="mobile-menu-btn" class="nav-mobile-btn" aria-label="Open Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </div></header>
 
-      <div class="hidden sm:flex items-center gap-4">
-        <a href="../contact-us.html" class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-md shadow-emerald-600/25 hover:scale-105 transition-all">Get a Quote</a>
+    <div id="mobile-drawer" class="mobile-drawer"><div class="mobile-drawer-backdrop"></div><div class="mobile-drawer-panel"><div class="mobile-drawer-header"><span style="font-weight:700;font-size:0.875rem;letter-spacing:0.04em;text-transform:uppercase">Vassu Infotech</span><button id="mobile-menu-close" class="mobile-drawer-close" aria-label="Close Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div><nav class="mobile-drawer-nav"><a href="../index.html" class="mobile-drawer-link"><span class="mobile-drawer-link-num">00</span> Home</a><a href="../services.html" class="mobile-drawer-link"><span class="mobile-drawer-link-num">01</span> Solutions &amp; Services</a><a href="../portfolio.html" class="mobile-drawer-link"><span class="mobile-drawer-link-num">02</span> Case Studies</a><a href="../compliance-and-security.html" class="mobile-drawer-link"><span class="mobile-drawer-link-num">03</span> Compliance</a><a href="../faq.html" class="mobile-drawer-link"><span class="mobile-drawer-link-num">04</span> FAQ</a><a href="../contact-us.html" class="mobile-drawer-link"><span class="mobile-drawer-link-num">05</span> Contact</a></nav><a href="../contact-us.html" class="mobile-drawer-cta">Request a Proposal</a></div></div>
+
+    <!-- PAGE BANNER (FLAT 2.0) -->
+    <section class="detail-banner">
+      <div class="inner">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="../index.html" class="breadcrumb-link">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <a href="../portfolio.html" class="breadcrumb-link">Projects</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">AI Document Audit Engine</span>
+        </nav>
+        <div class="flat-badge"><span class="flat-badge-dot"></span> CASE STUDY // BANKING &amp; FINTECH AI</div>
+        <h1 class="detail-banner-title">AI Document Audit &amp; OCR Engine for Enterprise Banking</h1>
+        <p class="detail-banner-sub">How Vassu Infotech architected an on-premise, air-gapped GPU compute cluster processing 500,000+ monthly financial documents with 99.4% extraction accuracy.</p>
       </div>
-    
-        <!-- Mobile Menu Button -->
-        <button
-          id="mobile-menu-btn"
-          class="md:hidden text-slate-700 hover:text-slate-900 p-2 focus:outline-none"
-          aria-label="Open navigation menu" aria-controls="mobile-drawer" aria-expanded="false"
-        >
-          <i class="fa-solid fa-bars text-xl"></i>
-        </button>
+    </section>
+
+    <!-- Case Study Body -->
+    <section class="py-16 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 space-y-12">
+        <div class="liquid-glass-panel p-8 sm:p-12 space-y-8">
+          <div class="space-y-4 max-w-3xl">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 font-heading">
+              Technical Challenge &amp; Solution
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              The client faced severe audit backlogs processing complex multi-page
+              financial statements and KYC portfolios. Vassu Infotech designed a
+              fine-tuned open-source LLM &amp; OCR pipeline hosted on dedicated
+              high-density GPU compute nodes, reducing audit turnarounds from 3 days
+              to under 4 minutes per batch with zero cloud data egress.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 font-mono text-xs text-slate-700"
+          >
+            <div
+              class="p-6 bg-white/90 rounded-2xl border border-slate-200/80 shadow-sm"
+            >
+              <span class="text-[#1E6B27] font-extrabold text-2xl sm:text-3xl block font-heading"
+                >500,000+</span
+              >
+              <span class="text-slate-500 text-xs font-mono mt-1 block"
+                >Monthly Invoices Processed</span
+              >
+            </div>
+            <div
+              class="p-6 bg-white/90 rounded-2xl border border-slate-200/80 shadow-sm"
+            >
+              <span class="text-[#1E6B27] font-extrabold text-2xl sm:text-3xl block font-heading"
+                >99.4%</span
+              >
+              <span class="text-slate-500 text-xs font-mono mt-1 block"
+                >OCR Extraction Precision</span
+              >
+            </div>
+            <div
+              class="p-6 bg-white/90 rounded-2xl border border-slate-200/80 shadow-sm"
+            >
+              <span class="text-[#1E6B27] font-extrabold text-2xl sm:text-3xl block font-heading"
+                >&lt; 4 Mins</span
+              >
+              <span class="text-slate-500 text-xs font-mono mt-1 block"
+                >Batch Audit Turnaround</span
+              >
+            </div>
+          </div>
+
+          <div class="pt-8 border-t border-slate-200 flex flex-wrap gap-4 items-center">
+            <a
+              href="../services/gpu-server-rental-for-ai.html"
+              class="liquid-btn-primary"
+            >
+              <span>Explore GPU AI Racks</span>
+        <div class="flat-badge"><span class="flat-badge-dot"></span> CASE STUDY // BANKING &amp; FINTECH AI</div>
+        <h1 class="detail-banner-title">AI Document Audit &amp; OCR Engine for Enterprise Banking</h1>
+        <p class="detail-banner-sub">How Vassu Infotech architected an on-premise, air-gapped GPU compute cluster processing 500,000+ monthly financial documents with 99.4% extraction accuracy.</p>
       </div>
-  </header>
-    <!-- Mobile Drawer Navigation -->
-    <div
-      id="mobile-drawer"
-      class="fixed inset-y-0 right-0 z-50 w-80 bg-white border-l border-slate-200 p-6 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden shadow-2xl"
-    >
-      <div class="flex items-center justify-between mb-8">
-        <span class="text-lg font-bold text-slate-900 font-heading">Navigation</span>
-        <button
-          id="mobile-menu-close"
-          class="text-slate-500 hover:text-slate-800 text-xl"
-          aria-label="Close navigation menu"
-        >
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <div class="flex flex-col gap-4 text-base font-medium">
-        <a href="../index.html" class="py-2 border-b border-slate-100 text-slate-600 hover:text-emerald-700">Home</a>
-        <div class="border-b border-slate-100">
-          <a href="../services.html" class="py-2 border-b border-slate-100 text-slate-600 hover:text-emerald-700">Services</a>
-          <div class="pl-4 pb-2 space-y-1 text-sm">
-            <a href="../services/server-rental-ahmedabad.html" class="block py-1.5 text-slate-500 hover:text-emerald-700">Server Rentals</a>
-            <a href="../services/gpu-server-rental-for-ai.html" class="block py-1.5 text-slate-500 hover:text-emerald-700">GPU AI &amp; LLM Compute</a>
-            <a href="../services/custom-software-development.html" class="block py-1.5 text-slate-500 hover:text-emerald-700">Custom Software</a>
-            <a href="../services/cloud-migration-devops.html" class="block py-1.5 text-slate-500 hover:text-emerald-700">Cloud &amp; DevOps</a>
+    </section>
+
+    <!-- METRICS STRIP (FLAT 2.0) -->
+    <section style="border-bottom:1px solid var(--rule);background:var(--bg-card);padding:var(--s6) 0">
+      <div class="inner">
+        <div class="metric-strip-grid">
+          <div class="metric-strip-item">
+            <div class="metric-strip-num">500k+</div>
+            <div class="metric-strip-label">Monthly Documents Processed</div>
+          </div>
+          <div class="metric-strip-item">
+            <div class="metric-strip-num">99.4%</div>
+            <div class="metric-strip-label">Field Extraction Precision</div>
+          </div>
+          <div class="metric-strip-item">
+            <div class="metric-strip-num">140ms</div>
+            <div class="metric-strip-label">Average Inference Latency</div>
+          </div>
+          <div class="metric-strip-item">
+            <div class="metric-strip-num">100%</div>
+            <div class="metric-strip-label">Air-Gapped Data Privacy</div>
           </div>
         </div>
-        <div class="border-b border-slate-100">
-          <a href="../portfolio.html" class="py-2 border-b border-slate-100 text-emerald-700 font-semibold">Portfolio</a>
-          <div class="pl-4 pb-2 space-y-1 text-sm">
-            <a href="../portfolio/fintech-virtualization-deployment.html" class="block py-1.5 text-slate-500 hover:text-emerald-700">Fintech Virtualization</a>
-            <a href="../portfolio/document-audit-ai-engine.html" class="block py-1.5 text-slate-500 hover:text-emerald-700">LLM Document Audit AI</a>
+      </div>
+    </section>
+
+    <!-- 2-COLUMN DETAIL LAYOUT (FLAT 2.0) -->
+    <section class="detail-layout-section">
+      <div class="inner">
+        <div class="detail-layout-grid">
+          <!-- LEFT: MAIN CONTENT -->
+          <div class="detail-main-content">
+            <div class="detail-hero-media reveal">
+              <img src="../images/software_services_hub.jpg" alt="AI Document Audit Engine Architecture and Machine Learning Inference Pipeline" loading="lazy" />
+            </div>
+
+            <!-- Executive Summary -->
+            <div class="detail-section-card reveal">
+              <h2 class="detail-section-title"><i class="fa-solid fa-file-invoice-dollar" style="color:var(--green);font-size:1.25rem"></i> Executive Overview</h2>
+              <p class="detail-section-text">A prominent commercial banking institution in GIFT City faced significant operational bottlenecks handling unstructured vendor invoices, loan applications, and tax clearance certificates. Over 40 full-time audit clerks manually verified line items, resulting in 48-hour approval turnaround times and human error rates exceeding 6.2%.</p>
+              <p class="detail-section-text">Strict regulatory compliance rules from the Reserve Bank of India (RBI) prohibited using public cloud OCR APIs (e.g. AWS Textract / Google Cloud Document AI) due to customer PII data residency mandates. The bank required an entirely private, on-premise GPU inference cluster.</p>
+            </div>
+
+            <!-- Architectural Blueprint -->
+            <div class="detail-section-card reveal">
+              <h2 class="detail-section-title"><i class="fa-solid fa-microchip" style="color:var(--green);font-size:1.25rem"></i> The Solution Architecture</h2>
+              <p class="detail-section-text">Vassu Infotech designed and deployed a full-stack on-premise AI pipeline combining custom-trained transformer models, low-latency OCR inference servers, and high-throughput GPU compute infrastructure.</p>
+
+              <div class="spec-grid spec-grid-2" style="margin-top:var(--s6)">
+                <div class="spec-box" style="padding:var(--s6)">
+                  <span class="spec-box-label">HARDWARE CLUSTER</span>
+                  <span class="spec-box-val">2x Dell PowerEdge R750xa Racks</span>
+                  <p style="font-size:0.8125rem;color:var(--text-secondary);margin-top:8px">Equipped with 4x NVIDIA A100 80GB SXM4 GPUs, dual Intel Xeon Gold 6338 processors, 512GB ECC DDR4 RAM, and 15.36TB NVMe U.2 SSD storage array in RAID-10.</p>
+                </div>
+                <div class="spec-box" style="padding:var(--s6)">
+                  <span class="spec-box-label">AI INFERENCE ENGINE</span>
+                  <span class="spec-box-val">NVIDIA Triton Inference Server</span>
+                  <p style="font-size:0.8125rem;color:var(--text-secondary);margin-top:8px">Fine-tuned LayoutLMv3 models for multimodal document layout analysis, combined with custom CRNN optical character recognition quantized to INT8 precision.</p>
+                </div>
+                <div class="spec-box" style="padding:var(--s6)">
+                  <span class="spec-box-label">MICROSERVICES STACK</span>
+                  <span class="spec-box-val">FastAPI, Celery &amp; Redis Cluster</span>
+                  <p style="font-size:0.8125rem;color:var(--text-secondary);margin-top:8px">Asynchronous job queue orchestrating PDF ingestion, rasterization, optical deskewing, entity extraction, and automated cross-matching against Core Banking APIs.</p>
+                </div>
+                <div class="spec-box" style="padding:var(--s6)">
+                  <span class="spec-box-label">DATA RESIDENCY</span>
+                  <span class="spec-box-val">Air-Gapped On-Premises SAN</span>
+                  <p style="font-size:0.8125rem;color:var(--text-secondary);margin-top:8px">Zero external internet egress. All models, databases, and logs remain within the bank's Tier III private data center enclave.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Results & Business Impact -->
+            <div class="detail-section-card reveal">
+              <h2 class="detail-section-title"><i class="fa-solid fa-chart-line" style="color:var(--green);font-size:1.25rem"></i> Measurable Business Impact</h2>
+              <ul class="flat-checklist">
+                <li class="flat-check-item"><span class="flat-check-icon"><i class="fa-solid fa-check"></i></span> <span><strong>Turnaround Reduced from 48h to 90s:</strong> Loan disbursement and invoice audit cycles were automated with straight-through processing (STP) for 88% of standard documents.</span></li>
+                <li class="flat-check-item"><span class="flat-check-icon"><i class="fa-solid fa-check"></i></span> <span><strong>Operational Cost Savings:</strong> Reduced manual clerk verification hours by 78%, reallocating staff to customer-facing risk underwriting.</span></li>
+                <li class="flat-check-item"><span class="flat-check-icon"><i class="fa-solid fa-check"></i></span> <span><strong>100% Regulatory Audit Cleanliness:</strong> Passed full RBI information security audits with complete cryptographic verification trails on every processed invoice.</span></li>
+              </ul>
+            </div>
+
+            <!-- Project Navigation Links -->
+            <div class="sla-banner-card reveal">
+              <div class="sla-banner-left">
+                <div class="sla-banner-tag">Next Case Study</div>
+                <h3 class="sla-banner-title">Explore: Fintech Virtualization &amp; Zero Downtime SAN Deployment</h3>
+                <p class="sla-banner-desc">See how we deployed a 3-node HA VMware vSphere cluster with 99.999% uptime for a high-frequency trading desk in Ahmedabad.</p>
+              </div>
+              <a href="./fintech-virtualization-deployment.html" class="hero-cta-primary" style="white-space:nowrap">View Case Study &ensp;<i class="fa-solid fa-arrow-right" style="font-size:10px"></i></a>
+            </div>
+          </div>
+
+          <!-- RIGHT: SIDEBAR -->
+          <div class="detail-sidebar-wrap">
+            <!-- Project Meta Card -->
+            <div class="sidebar-panel reveal">
+              <div class="sidebar-panel-title">Project Metadata</div>
+              <div style="display:flex;flex-direction:column;gap:14px;padding:var(--s4) var(--s6)">
+                <div>
+                  <span style="font-size:0.6875rem;font-family:var(--font-mono);font-weight:600;letter-spacing:0.08em;color:var(--text-muted);text-transform:uppercase;display:block">CLIENT SECTOR</span>
+                  <span style="font-size:0.875rem;font-weight:600;color:var(--text-primary)">Commercial Banking &amp; NBFC</span>
+                </div>
+                <div style="border-top:1px solid var(--rule);padding-top:12px">
+                  <span style="font-size:0.6875rem;font-family:var(--font-mono);font-weight:600;letter-spacing:0.08em;color:var(--text-muted);text-transform:uppercase;display:block">LOCATION</span>
+                  <span style="font-size:0.875rem;font-weight:600;color:var(--text-primary)">GIFT City, Gujarat</span>
+                </div>
+                <div style="border-top:1px solid var(--rule);padding-top:12px">
+                  <span style="font-size:0.6875rem;font-family:var(--font-mono);font-weight:600;letter-spacing:0.08em;color:var(--text-muted);text-transform:uppercase;display:block">TIMELINE</span>
+                  <span style="font-size:0.875rem;font-weight:600;color:var(--text-primary)">12 Weeks (Audit to Production)</span>
+                </div>
+                <div style="border-top:1px solid var(--rule);padding-top:12px">
+                  <span style="font-size:0.6875rem;font-family:var(--font-mono);font-weight:600;letter-spacing:0.08em;color:var(--text-muted);text-transform:uppercase;display:block">TECHNOLOGIES</span>
+                  <span style="font-size:0.8125rem;font-family:var(--font-mono);color:var(--text-secondary);display:block;margin-top:4px">NVIDIA A100, Triton, LayoutLMv3, FastAPI, Docker, PostgreSQL, RAID-10 SAN</span>
+                </div>
+                <div style="border-top:1px solid var(--rule);padding-top:12px">
+                  <span style="font-size:0.6875rem;font-family:var(--font-mono);font-weight:600;letter-spacing:0.08em;color:var(--text-muted);text-transform:uppercase;display:block">COMPLIANCE</span>
+                  <span style="font-size:0.875rem;font-weight:600;color:var(--green)">RBI IT Framework / ISO 27001</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sidebar CTA Box -->
+            <div class="sidebar-cta-box reveal">
+              <div class="flat-badge" style="margin-bottom:var(--s2)"><span class="flat-badge-dot"></span> AI COMPUTE DESK</div>
+              <h4>Deploy Enterprise AI</h4>
+              <p>Planning an on-premise LLM, OCR, or vision compute cluster? Consult our AI infrastructure team for hardware sizing.</p>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-top:var(--s4)">
+                <a href="../contact-us.html" class="sidebar-btn"><i class="fa-solid fa-microchip"></i> Request AI Compute RFP</a>
+                <a href="https://wa.me/919173743336?text=Hello%20Vassu%20Infotech%2C%20I%20am%20interested%20in%20Enterprise%20AI%20Solutions." target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:11px 20px;font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:#25D366;border-radius:2px;text-decoration:none"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+              </div>
+            </div>
           </div>
         </div>
-        <a href="../faq.html" class="py-2 border-b border-slate-100 text-slate-600 hover:text-emerald-700">FAQ</a>
-        <a href="../compliance-and-security.html" class="py-2 border-b border-slate-100 text-slate-600 hover:text-emerald-700">Compliance</a>
-        <a href="../contact-us.html" class="py-2 border-b border-slate-100 text-slate-600 hover:text-emerald-700">Contact Us</a>
-        <a href="../contact-us.html" class="mt-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-3 text-center rounded-full shadow-md shadow-emerald-600/25 transition-all duration-300">Get a Quote</a>
       </div>
-    </div>
+    </section>
 
-
-  <!-- Content Section -->
-  <main class="py-16">
-    <div class="max-w-4xl mx-auto px-4">
-      <a href="../portfolio.html" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-700 hover:underline mb-4">
-        <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
-      </a>
-      
-      <span class="text-xs font-bold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-300 block w-max">AI Software Engineering</span>
-      <h1 class="text-3xl sm:text-4xl font-extrabold font-heading mt-4 text-slate-900 leading-tight">LLM-Powered Document Auditing Engine</h1>
-      
-      <div class="prose prose-slate mt-8 space-y-6 text-sm text-slate-600 leading-relaxed">
-        
-        <h2 class="text-xl font-bold font-heading text-slate-900">Project Overview</h2>
-        <p>
-          An enterprise compliance and auditing corporation in Gujarat needed to automate the screening and parsing of thousands of long-form legal agreements and transaction logs daily.
-        </p>
-
-        <h2 class="text-xl font-bold font-heading text-slate-900 mt-8">Technical Challenge</h2>
-        <p>
-          Sending confidential legal documents to third-party public AI APIs (such as OpenAI or Anthropic) violated corporate security policies. The client needed a self-hosted, local LLM running on high-performance GPU hardware inside their secure private network, alongside a custom-engineered web portal for their compliance officers to trigger audits and view discrepancies.
-        </p>
-
-        <h2 class="text-xl font-bold font-heading text-slate-900 mt-8">The Solution</h2>
-        <p>
-          Vassu Infotech provided a full-stack hardware and custom software integration:
-        </p>
-        <ul class="list-disc pl-5 space-y-2 text-xs">
-          <li><strong>Leased Compute Hardware</strong>: Deployed a dual-node GPU server configured with 4x NVIDIA RTX A6000 GPUs running inside a secure isolated subnet.</li>
-          <li><strong>Local Model Fine-Tuning</strong>: Pre-configured Llama-3-70B model pipelines fine-tuned to recognize regulatory compliance clauses.</li>
-          <li><strong>Bespoke Web Portal</strong>: Built a multi-tenant, secure portal (React, Express, PostgreSQL) allowing compliance teams to upload documents and view AI audit highlights side-by-side with legal logs.</li>
-        </ul>
-
-        <div class="bg-slate-100 border border-slate-200 rounded-2xl p-6 my-8">
-          <h3 class="font-bold text-slate-900 text-sm">Key Metric Achieved</h3>
-          <p class="text-xs text-slate-600 mt-1">
-            Manual document screening time was reduced from **4 hours per agreement** to **under 45 seconds**, with 0% data leakage to external networks.
-          </p>
-        </div>
-
-        <h2 class="text-xl font-bold font-heading text-slate-900 mt-8">Why Self-Hosted LLMs Matter</h2>
-        <p>
-          Public AI APIs often require sending confidential legal and financial documents to third-party servers, which violates enterprise security policies. Vassu Infotech's self-hosted approach keeps all model inference inside the client's private subnet, giving compliance teams full control over data residency, access logs, and audit trails.
-        </p>
-
-        <h2 class="text-xl font-bold font-heading text-slate-900 mt-8">Architecture & Deliverables</h2>
-        <ul class="list-disc pl-5 space-y-2 text-xs">
-          <li><strong>Compute</strong>: Dual-node GPU server with 4x NVIDIA RTX A6000 (48 GB GDDR6 each) in an isolated subnet.</li>
-          <li><strong>Model Pipeline</strong>: Llama-3-70B fine-tuned on regulatory compliance clauses with vLLM inference serving.</li>
-          <li><strong>Web Portal</strong>: Multi-tenant React + Express + PostgreSQL dashboard for document uploads and audit review.</li>
-          <li><strong>Security</strong>: AES-256 encryption at rest, TLS 1.3 in transit, role-based access, and full audit logging.</li>
-          <li><strong>Maintenance</strong>: 24/7 monitoring with hardware swap SLA included in the GPU rental agreement.</li>
-        </ul>
-
-        <h2 class="text-xl font-bold font-heading text-slate-900 mt-8">Results & Business Impact</h2>
-        <ul class="list-disc pl-5 space-y-2 text-xs">
-          <li>Screening throughput increased from ~2 agreements per day to over 1,000 per day per reviewer.</li>
-          <li>0% data leakage to external networks; all inference remains on-premise.</li>
-          <li>Compliance officers now review highlighted discrepancies instead of reading full documents.</li>
-          <li>Flexible monthly GPU rental enabled the client to scale compute without capital expenditure.</li>
-        </ul>
-
-        <div class="text-center pt-8">
-          <a href="../contact-us.html" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-emerald-600/20 hover:scale-105 transition-all text-sm">
-            Discuss Custom AI Applications
-          </a>
-        </div>
+    <!-- FOOTER -->
+    <footer class="footer"><div class="inner">
+      <div class="footer-grid">
+        <div><div class="footer-brand-name">Vassu Infotech</div><p class="footer-brand-desc">Enterprise infrastructure, AI compute, cloud engineering and managed IT systems. Headquartered in Ahmedabad, serving enterprises across India.</p><div class="footer-social"><a href="https://www.facebook.com/profile.php?id=61586892461591" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.linkedin.com/in/aarchi-soni/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/vassuinfotech_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div></div>
+        <div><div class="footer-col-title">Infrastructure</div><ul class="footer-links"><li><a href="../services/server-amc-support.html">Server AMC &amp; Support</a></li><li><a href="../services/server-rental-ahmedabad.html">Server Rentals</a></li><li><a href="../services/global-hardware-supply.html">Hardware Supply</a></li><li><a href="../services/gpu-server-rental-for-ai.html">GPU AI Compute</a></li><li><a href="../services/infrastructure-deployment.html">Deployment</a></li><li><a href="../services/data-center-architecture.html">Data Center</a></li></ul></div>
+        <div><div class="footer-col-title">Software &amp; Cloud</div><ul class="footer-links"><li><a href="../services/cloud-migration-devops.html">Cloud &amp; DevOps</a></li><li><a href="../services/enterprise-virtualization.html">Virtualization</a></li><li><a href="../services/secure-network-fabric.html">Network Fabric</a></li><li><a href="../services/cyber-shield-pro.html">Cybersecurity</a></li><li><a href="../services/custom-software-development.html">Custom Software</a></li><li><a href="../services/visual-collaboration-solutions.html">Collaboration</a></li></ul></div>
+        <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="../portfolio.html">Case Studies</a></li><li><a href="../compliance-and-security.html">Compliance</a></li><li><a href="../faq.html">FAQ</a></li><li><a href="../contact-us.html">Contact</a></li><li><a href="tel:+919173743336">+91 91737 43336</a></li><li><a href="mailto:info@vassuinfotech.com">info@vassuinfotech.com</a></li></ul></div>
       </div>
-    </div>
-  </main>
+      <div class="footer-bottom"><span class="footer-copy">&copy; 2026 Vassu Infotech. All rights reserved.</span><div class="footer-legal"><a href="../compliance-and-security.html">Compliance &amp; Security</a></div></div>
+    </div></footer>
 
-  <!-- Footer -->
-  <footer class="bg-slate-900 border-t border-slate-800 pt-12 pb-10 text-xs text-slate-400 text-center">
-    <p>© 2026 Vassu Infotech. All Rights Reserved. Enterprise Hardware & Software Solutions.</p>
-  </footer>
-
-  <script src="../js/main.js"></script>
-</body>
+    <div class="whatsapp-float-container"><span class="whatsapp-tooltip">Chat with us</span><a href="https://wa.me/919173743336?text=Hello%20Vassu%20Infotech%2C%20I%20am%20interested%20in%20your%20infrastructure%20solutions." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div>
+    <script src="../js/main.js?v=4.0.0"></script>
+  </body>
 </html>

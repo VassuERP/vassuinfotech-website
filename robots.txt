@@ -1,57 +1,37 @@
-# Robots.txt — Vassu Infotech (Enterprise Hardware & Software)
-# SEO + AEO/GEO: explicitly welcome search & AI crawlers to index the site.
-
 User-agent: *
 Allow: /
-Disallow: /gitlab/
-Disallow: /v1.0/
-Disallow: /scraper/
-Disallow: /.tmb/
 
-# ---------- AI / ANSWER ENGINE CRAWLERS (AEO & GEO) ----------
+# Core Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Answer / Generative Engine Crawlers (Explicitly Permitted)
 User-agent: GPTBot
 Allow: /
-Allow: /llm.txt
 
-User-agent: ClaudeBot
+User-agent: ChatGPT-User
 Allow: /
-Allow: /llm.txt
 
 User-agent: Google-Extended
 Allow: /
-Allow: /llm.txt
 
 User-agent: PerplexityBot
 Allow: /
-Allow: /llm.txt
 
-User-agent: Applebot
+User-agent: ClaudeBot
 Allow: /
-Allow: /llm.txt
 
-User-agent: Applebot-Extended
+User-agent: anthropic-ai
 Allow: /
-Allow: /llm.txt
 
-User-agent: Amazonbot
-Allow: /
-Allow: /llm.txt
+# Disallow non-public / internal paths
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /*?*session=
+Disallow: /search-results/
 
-User-agent: Bytespider
-Allow: /
-Allow: /llm.txt
-
-User-agent: cohere-ai
-Allow: /
-Allow: /llm.txt
-
-User-agent: meta-externalagent
-Allow: /
-Allow: /llm.txt
-
-User-agent: YouBot
-Allow: /
-Allow: /llm.txt
-
-# ---------- SITEMAP ----------
 Sitemap: https://vassuinfotech.com/sitemap.xml
