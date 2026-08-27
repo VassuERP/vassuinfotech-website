@@ -107,7 +107,7 @@ Vassu Infotech aligns its storage decommissioning, data handling, and software e
 - **SOC 2 Type II aligned**: Security, confidentiality, and processing integrity controls.
 - **GDPR & Privacy**: Custom software engineered with robust cryptography and strict regional privacy compliance.
 - **Partnerships**: AWS Cloud Partner, Microsoft Cloud, enterprise technology partners.
-- **Uptime Guarantee**: 99.99% hardware uptime with 2-hour on-site replacement SLA in Ahmedabad.
+- **Uptime Guarantee**: High-availability hardware commitment with 4-hour on-site replacement SLA in Ahmedabad.
 
 ---
 

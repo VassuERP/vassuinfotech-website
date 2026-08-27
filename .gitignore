@@ -1,6 +1,5 @@
 .DS_Store
 .tmb/
 *.bk
-.vercel/
-.freebuff/
-
+*.zip
+*.rar

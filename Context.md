@@ -3,33 +3,33 @@
 ## Overview
 Vassu Infotech is an enterprise IT infrastructure, GPU AI compute, cloud DevOps, and custom software engineering firm based in Ahmedabad, Gujarat, India.
 
-## Design System & Architecture (Flat 2.0 / Modern Semi-Flat Standard)
-- **Standard**: 2026 Flat 2.0 (Modern Semi-Flat Design) across all 23 HTML pages.
-- **Visual Aesthetic**: Anti-slop, clean architectural precision, hairline borders (`1px solid var(--rule)` / `#DEE1DF`), subtle elevation (`--shadow-flat-card`), crisp typography.
+## Design System & Architecture (2026 Enterprise Bright Mode Standard)
+- **Standard**: 2026 Enterprise Bright Mode Design System across all 23 HTML pages.
+- **Visual Aesthetic**: Crisp Slate canvas (`#F8FAFC`), pure white elevated surfaces (`#FFFFFF`), rich emerald (`#059669`) and laser mint (`#10B981`) brand accents, mouse-tracking spotlights, fine hairline rules (`1px solid #E2E8F0`), soft ambient depth shadows (`rgba(15, 23, 42, 0.05)`), crisp Slate 900 architectural typography, and hardware telemetry consoles.
 - **Palette**:
-  - Primary Dark / Tinted Charcoal: `#111513` (`--bg-primary-dark`, `--text-primary`)
-  - Forest Green Accent: `#1B5E20` (`--green`, `--green-hover: #144818`, `--green-subtle: #E8F0E9`)
-  - Slate Secondary: `#323634` (`--text-secondary`)
-  - Tinted Muted: `#525654` (`--text-muted`)
-  - Hairline Rule / Border: `#DEE1DF` (`--rule`, `--rule-subtle: #EBEEEC`)
-  - Light Tinted Surfaces: `#FDFEFD` (`--bg-card`), `#F8FAF8` (`--bg-card-hover`), `#F0F3F1` (`--bg-subtle`)
+  - Crisp Ambient Base: `#F8FAFC` (`--bg-obsidian` / `--surface-off`)
+  - Elevated White Surfaces: `#FFFFFF` (`--bg-surface` / `--surface-white`), `#F1F5F9` (`--bg-surface-elevated` / `--surface-light`)
+  - Frosted White Cards: `rgba(255, 255, 255, 0.94)` (`--bg-card`), `#FFFFFF` (`--bg-card-hover`)
+  - Rich Emerald & Neon Accents: `#059669` (`--green`), `#059669` (`--green-neon`), `#10B981` (`--green-glow`), `#047857` (`--green-hover`), `#0891B2` (`--cyan`)
+  - High-Contrast Text: `#0F172A` (`--text-primary`), `#334155` (`--text-secondary`), `#64748B` (`--text-tertiary`), `#94A3B8` (`--text-muted`)
+  - Luminous Hairline Rules: `#E2E8F0` (`--rule`), `rgba(5, 150, 105, 0.25)` (`--green-border`)
 - **Typography**:
   - Display / Headings: `Manrope`, 500/600/700/800
   - Body: `Inter` / `DM Sans`, 400/500/600
-  - Specs / Code / SLA tags: `JetBrains Mono`, 400/500/600
-- **Navigation & Mobile**: Full-width sticky header (`.nav`) with backdrop blur, accessible desktop navigation links, responsive mobile drawer (`#mobile-drawer`), quick WhatsApp action button.
+  - Specs / Code / SLA tags: `JetBrains Mono`, 400/500/600/700
+- **Navigation & Mobile**: Frosted white glass header (`.nav`) with backdrop blur (`blur(20px)`), accessible desktop navigation links, responsive mobile drawer (`#mobile-drawer`), quick WhatsApp action button.
 - **Layout Patterns**:
-  - Hub & Landing Pages: Hero with live typewriter and animated canvas particles, metric strips, Swiss structured capabilities rows/cards, differentiator matrix, client trust marquee, interactive FAQ accordion, high-contrast CTA banner.
-  - Detail Pages (14 Services + 2 Case Studies): Dedicated 2-column layout (`.detail-layout-grid`) with breadcrumb banner (`.detail-banner`), key metric strip (`.metric-strip-grid`), hero media (`.detail-hero-media`), engineering specification matrix (`.spec-grid`, `.spec-box`), feature checklists (`.flat-checklist`), SLA highlight banners (`.sla-banner-card`), and sticky directory sidebar with active state highlighting (`.detail-sidebar-wrap`, `.sidebar-panel`, `.sidebar-cta-box`).
+  - Hub & Landing Pages: Hero with live hardware showcase switcher and glowing telemetry HUD, ambient laser grid with radial depth, interactive capabilities bento matrix with category filters and mouse-following spotlight glow, GPU AI compute rack bento, floating case study glass cards, certified technology ecosystem shields, client trust 6-card interactive showcase grid with verified deployment metrics, interactive FAQ accordion, high-impact cyber console CTA banner.
+  - Detail Pages (14 Services + 2 Case Studies): Dedicated 2-column layout (`.detail-layout-grid`) with light breadcrumb banner (`.detail-banner`), key metric strip (`.metric-strip-grid`), hero media (`.detail-hero-media`), engineering specification matrix (`.spec-grid`, `.spec-box`), feature checklists (`.flat-checklist`), SLA highlight banners (`.sla-banner-card`), and sticky directory sidebar with active state highlighting (`.detail-sidebar-wrap`, `.sidebar-panel`, `.sidebar-cta-box`).
 
 ## Complete File & Directory Inventory (23 HTML Pages)
 ```
 d:\public_html\
 ├── css/
-│   └── style.css            # Complete Flat 2.0 Design System & component tokens (Section 33)
+│   └── style.css            # Complete Enterprise High-Tech Design System & component tokens
 ├── js/
-│   └── main.js              # Native Vanilla JS interaction engine (drawer, scroll, accordion, particles, typewriter, counters)
-├── images/                  # High-resolution datacenter, server hardware, and solution photography
+│   └── main.js              # Native Vanilla JS interaction engine (drawer, scroll, accordion, particles, typewriter, counters, spotlight, parallax)
+├── images/                  # High-resolution datacenter, server hardware, client logos, and solution photography
 ├── portfolio/               # Case study detail pages
 │   ├── document-audit-ai-engine.html             # AI Document Audit & OCR Engine Case Study
 │   └── fintech-virtualization-deployment.html    # GIFT City Fintech Virtualization Cluster Case Study
@@ -41,18 +41,18 @@ d:\public_html\
 │   ├── data-center-architecture.html             # Tier III/IV Data Center Architecture
 │   ├── enterprise-virtualization.html            # VMware vSphere 8 & Proxmox VE Ceph
 │   ├── global-hardware-supply.html               # Genuine OEM Hardware Procurement & Supply
-│   ├── gpu-server-rental-for-ai.html             # NVIDIA H100/A100 GPU AI Compute Racks
+│   ├── gpu-server-rental-for-ai.html             # NVIDIA GPU AI Compute Racks
 │   ├── infrastructure-deployment.html            # Turnkey Datacenter & Rack Deployment
 │   ├── omni-channel-contact-centers.html         # VoIP Telephony & Contact Center Systems
 │   ├── secure-network-fabric.html                # Enterprise SD-WAN & 10G/40G/100G Fabric
 │   ├── server-amc-support.html                   # 24/7 Managed Server AMC & 4-Hr SLA
 │   ├── server-rental-ahmedabad.html              # Dedicated Enterprise Server Rentals
 │   └── visual-collaboration-solutions.html       # Boardroom AV & Teams/Zoom Rooms
-├── 404.html                                      # Flat 2.0 404 Error page
+├── 404.html                                      # High-Tech 404 Error page
 ├── compliance-and-security.html                  # SLA Guarantees, ISO 27001 & Compliance Matrix
 ├── contact-us.html                               # RFQ Engineering Quote & Branch Offices Portal
 ├── faq.html                                      # Technical FAQ & Hardware Specifications
-├── index.html                                    # Flagship Redesigned Flat 2.0 Homepage
+├── index.html                                    # Flagship Redesigned Enterprise High-Tech Homepage
 ├── portfolio.html                                # Case Studies Showcase Hub
 ├── services.html                                 # Comprehensive 14-Service Catalog Hub
 ├── sitemap.xml                                   # Complete 23-page XML sitemap
