@@ -1,0 +1,71 @@
+name: Deploy static site to Hostinger VPS
+
+on:
+  push:
+    branches:
+      - main   # adjust if you use a different production branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install rsync
+        run: sudo apt-get update && sudo apt-get install -y rsync
+
+      - name: Set release name
+        id: vars
+        run: |
+          RELEASE=$(date +%Y%m%d%H%M%S)
+          echo "release=$RELEASE" >> $GITHUB_OUTPUT
+
+      - name: Create remote release folder
+        env:
+          RELEASE: ${{ steps.vars.outputs.release }}
+        run: |
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} \
+            "mkdir -p /var/www/vassuinfotech.com/releases/${RELEASE}"
+
+      - name: Rsync site files
+        env:
+          RELEASE: ${{ steps.vars.outputs.release }}
+        run: |
+          rsync -avz --delete \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='README.md' \
+            --exclude='*.md' \
+            --exclude='*.json' \
+            --exclude='*.yml' \
+            --exclude='*.sh' \
+            --exclude='build.js' \
+            --exclude='package.json' \
+            . \
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/vassuinfotech.com/releases/${RELEASE}/ \
+            -e "ssh -p ${{ secrets.VPS_PORT }} -i <(echo \"$VPS_SSH_KEY\") -o StrictHostKeyChecking=no"
+
+      - name: Verify index.html exists
+        env:
+          RELEASE: ${{ steps.vars.outputs.release }}
+        run: |
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} \
+            "[ -f /var/www/vassuinfotech.com/releases/${RELEASE}/index.html ]" && echo "✅ index.html present"
+
+      - name: Switch current symlink
+        env:
+          RELEASE: ${{ steps.vars.outputs.release }}
+        run: |
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} \
+            "ln -sfn /var/www/vassuinfotech.com/releases/${RELEASE} /var/www/vassuinfotech.com/current && \
+             sudo systemctl reload nginx"
+
+      - name: Cleanup old releases
+        env:
+          RETAIN: ${{ secrets.RELEASE_RETENTION }}
+        run: |
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} \
+            'cd /var/www/vassuinfotech.com/releases && \
+             ls -1 | sort -r | tail -n +$((RETAIN+1)) | xargs -r rm -rf'
