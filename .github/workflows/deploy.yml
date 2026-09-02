@@ -73,4 +73,5 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} \
             'cd /var/www/vassuinfotech.com/releases && \
-             ls -1 | sort -r | tail -n +$((RETAIN+1)) | xargs -r rm -rf'
+             COUNT="${RETAIN:-5}" && \
+             ls -1dt */ | tail -n +$((COUNT + 1)) | xargs -r rm -rf'
