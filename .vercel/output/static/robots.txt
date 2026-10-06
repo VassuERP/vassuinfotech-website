@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+
+# Core Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Answer / Generative Engine Crawlers (Explicitly Permitted)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Disallow non-public / internal paths
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /*?*session=
+Disallow: /search-results/
+
+Sitemap: https://vassuinfotech.com/sitemap.xml

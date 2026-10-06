@@ -1,31 +1,40 @@
 User-agent: *
 Allow: /
+Allow: /blog/
 
 # Core Search Engines
 User-agent: Googlebot
 Allow: /
+Allow: /blog/
 
 User-agent: Bingbot
 Allow: /
+Allow: /blog/
 
-# AI Answer / Generative Engine Crawlers (Explicitly Permitted)
+# AI Answer / Generative Engine Crawlers (Explicitly Permitted for GEO/AEO)
 User-agent: GPTBot
 Allow: /
+Allow: /blog/
 
 User-agent: ChatGPT-User
 Allow: /
+Allow: /blog/
 
 User-agent: Google-Extended
 Allow: /
+Allow: /blog/
 
 User-agent: PerplexityBot
 Allow: /
+Allow: /blog/
 
 User-agent: ClaudeBot
 Allow: /
+Allow: /blog/
 
 User-agent: anthropic-ai
 Allow: /
+Allow: /blog/
 
 # Disallow non-public / internal paths
 Disallow: /admin/

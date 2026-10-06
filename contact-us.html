@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1893RGH1FW"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-1893RGH1FW");</script>
-    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xwyxun7vj0");</script>
+    <!-- Analytics deferred to end of body for performance -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Get instant quotes for server rentals, GPU AI compute, and custom software in Ahmedabad. Contact our 24/7 technical team in Bodakdev." />
@@ -19,10 +17,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css?v=4.0.0" />
+    <link rel="stylesheet" href="./css/style.css?v=5.0.0" />
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ContactPage","url":"https://vassuinfotech.com/contact-us.html","name":"Contact Vassu Infotech | Enterprise IT Support Ahmedabad","description":"Get in touch with Vassu Infotech's server hardware specialists in Bodakdev, Ahmedabad."},{"@type":"LocalBusiness","name":"Vassu Infotech","telephone":"+919173743336","email":"info@vassuinfotech.com","address":{"@type":"PostalAddress","streetAddress":"403, Maurya Atriya, Premanjali Society, Bodakdev","addressLocality":"Ahmedabad","addressRegion":"Gujarat","postalCode":"380053","addressCountry":"IN"}}]}</script>
   </head>
   <body>
+    <!-- Skip to main content (WCAG 2.4.1) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div id="scroll-progress-bar"></div>
 
     <header class="nav"><div class="nav-inner">
@@ -35,9 +35,12 @@
         <a href="./faq.html" class="nav-link">FAQ</a>
         <a href="./contact-us.html" class="nav-link active">Contact</a>
       </nav>
-      <div style="display:flex;align-items:center;gap:12px">
-        <a href="./contact-us.html" class="nav-cta">Request a Proposal &ensp;<i class="fa-solid fa-arrow-right" style="font-size:10px"></i></a>
-        <button id="mobile-menu-btn" class="nav-mobile-btn" aria-label="Open Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      <div style="display:flex;align-items:center;gap:10px">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" title="Toggle dark / light mode">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="./contact-us.html" class="nav-cta">Request a Proposal &ensp;<i class="fa-solid fa-arrow-right icon-xs"></i></a>
+        <button id="mobile-menu-btn" class="nav-mobile-btn" aria-label="Open Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
       </div>
     </div></header>
 
@@ -58,7 +61,7 @@
     </section>
 
     <!-- CONTACT FORM + OFFICES (FLAT 2.0) -->
-    <section class="section" style="background:var(--surface-off)">
+    <section id="main-content" class="section" style="background:var(--surface-off)">
       <div class="inner">
         <div class="detail-layout-grid">
           <!-- LEFT: FORM CARD -->
@@ -66,7 +69,7 @@
             <h2 class="detail-section-title"><i class="fa-solid fa-file-signature" style="color:var(--green);font-size:1.25rem"></i> Engineering Proposal Request</h2>
             <p class="detail-section-text">Complete the details below to receive a customized technical specification sheet and transparent pricing quote.</p>
 
-            <form id="contact-form" style="margin-top:var(--s6)">
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="margin-top:var(--s6)">
               <div class="form-field">
                 <label class="form-label" for="name">Full Name *</label>
                 <input type="text" id="name" name="name" class="form-input" required placeholder="e.g. Rahul Sharma" />
@@ -99,7 +102,9 @@
                 <label class="form-label" for="message">Workload &amp; Architecture Requirements *</label>
                 <textarea id="message" name="message" class="form-textarea" required placeholder="Specify server configuration (CPU, RAM, storage), location (Ahmedabad/GIFT City/Other), timeline, or specific compliance requirements..."></textarea>
               </div>
-              <button type="submit" class="form-submit" style="width:100%">Submit Technical Inquiry &ensp;<i class="fa-solid fa-arrow-right" style="font-size:11px"></i></button>
+              <input type="hidden" name="_replyto" value="">
+              <input type="hidden" name="_next" value="https://vassuinfotech.com/thank-you.html">
+              <button type="submit" class="form-submit" style="width:100%">Submit Technical Inquiry &ensp;<i class="fa-solid fa-arrow-right icon-xs"></i></button>
             </form>
           </div>
 
@@ -192,6 +197,9 @@
     </div></footer>
 
     <div class="whatsapp-float-container"><span class="whatsapp-tooltip">Chat with us</span><a href="https://wa.me/919173743336?text=Hello%20Vassu%20Infotech%2C%20I%20am%20interested%20in%20your%20infrastructure%20solutions." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div>
-    <script src="./js/main.js?v=4.0.0"></script>
+    <script src="./js/main.js?v=5.0.0"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1893RGH1FW"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1893RGH1FW');</script>
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','xwyxun7vj0');</script>
   </body>
 </html>

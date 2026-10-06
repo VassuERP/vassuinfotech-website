@@ -1,6 +1,19 @@
 {
   "private": true,
   "scripts": {
-    "vercel-build": "node build.js"
+    "dev": "npx serve . --listen 3000",
+    "build:css": "cleancss -o css/style.min.css css/style.css",
+    "build:js": "uglifyjs js/main.js -o js/main.min.js -c -m",
+    "build": "npm run build:css && npm run build:js && node build.js",
+    "vercel-build": "npm run build",
+    "lint": "eslint js/main.js",
+    "format": "prettier --write css/style.css js/main.js"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.0",
+    "uglify-js": "^3.17.4"
   }
 }

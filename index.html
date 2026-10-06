@@ -1,34 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google Tag Manager / Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1893RGH1FW"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-1893RGH1FW");
-    </script>
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "xwyxun7vj0");
-    </script>
+    <!-- Google Analytics + Clarity deferred to end of body for performance -->
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -98,7 +71,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/style.css?v=4.0.0" />
+    <link rel="stylesheet" href="./css/style.css?v=5.0.0" />
 
     <script type="application/ld+json">
       {
@@ -256,6 +229,9 @@
   </head>
 
   <body>
+    <!-- Skip to main content (WCAG 2.4.1) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <div id="scroll-progress-bar"></div>
 
     <!-- ═══ NAVIGATION ═══ -->
@@ -425,18 +401,24 @@
           <a href="./contact-us.html" class="nav-link">Contact</a>
         </nav>
 
-        <div style="display: flex; align-items: center; gap: 12px">
+        <div class="nav-actions-wrap">
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Switch to dark mode"
+            title="Toggle dark / light mode"
+          >
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+          </button>
           <a href="./contact-us.html" class="nav-cta"
             >Proposal
-            <i
-              class="fa-solid fa-arrow-right"
-              style="font-size: 9px; margin-left: 4px"
-            ></i
+            <i class="fa-solid fa-arrow-right icon-arrow-sm"></i
           ></a>
           <button
             id="mobile-menu-btn"
             class="nav-mobile-btn"
             aria-label="Open Menu"
+            aria-expanded="false"
           >
             <svg
               viewBox="0 0 24 24"
@@ -506,7 +488,7 @@
     </div>
 
     <!-- ═══ HERO (2026 VISUAL SHOWCASE) ═══ -->
-    <section class="hero">
+    <section id="main-content" class="hero">
       <div class="hero-grid-pattern"></div>
       <div class="hero-ambient-glow"></div>
       <div class="hero-ambient-glow-left"></div>
@@ -1607,6 +1589,105 @@
       </div>
     </section>
 
+    <!-- ═══ TESTIMONIALS ═══ -->
+    <section class="section" style="background:var(--surface-off)">
+      <div class="inner">
+        <div class="section-num">Client Feedback // Verified Enterprise Clients</div>
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:var(--s4);margin-bottom:var(--s10)">
+          <h2 class="t-display" style="max-width:520px">What Enterprise Clients Say</h2>
+          <a href="./portfolio.html" style="font-size:0.875rem;font-weight:600;color:var(--green);display:flex;align-items:center;gap:6px;white-space:nowrap">View All Case Studies <i class="fa-solid fa-arrow-right icon-xs"></i></a>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--s5)">
+
+          <!-- Testimonial 1 -->
+          <div class="flat-card spotlight-card reveal" style="padding:var(--s6)">
+            <div style="display:flex;gap:2px;margin-bottom:var(--s4)">
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+            </div>
+            <blockquote style="font-size:0.9375rem;line-height:1.7;color:var(--text-secondary);margin-bottom:var(--s5);font-style:italic">
+              "Vassu Infotech replaced our failed RAID controller within 3 hours at midnight — no escalation needed, the technician arrived on site with the part already in hand. This is exactly what a 4-hour SLA should mean."
+            </blockquote>
+            <div style="display:flex;align-items:center;gap:var(--s3);border-top:1px solid var(--rule);padding-top:var(--s4)">
+              <div style="width:36px;height:36px;border-radius:50%;background:var(--green-subtle);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:0.875rem;color:var(--green);flex-shrink:0">R</div>
+              <div>
+                <div style="font-family:var(--font-display);font-weight:700;font-size:0.875rem;color:var(--text-primary)">Rajesh Patel</div>
+                <div style="font-size:0.75rem;color:var(--text-muted)">CTO, Manufacturing Enterprise · Ahmedabad</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="flat-card spotlight-card reveal" style="padding:var(--s6)" data-delay="80">
+            <div style="display:flex;gap:2px;margin-bottom:var(--s4)">
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+            </div>
+            <blockquote style="font-size:0.9375rem;line-height:1.7;color:var(--text-secondary);margin-bottom:var(--s5);font-style:italic">
+              "The GPU cluster Vassu provisioned for our LLM training workloads reduced our iteration time by 60%. Their team pre-installed CUDA, PyTorch, and our custom containers before the rack even reached us. Exceptional."
+            </blockquote>
+            <div style="display:flex;align-items:center;gap:var(--s3);border-top:1px solid var(--rule);padding-top:var(--s4)">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(8,145,178,0.08);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:0.875rem;color:var(--cyan);flex-shrink:0">S</div>
+              <div>
+                <div style="font-family:var(--font-display);font-weight:700;font-size:0.875rem;color:var(--text-primary)">Supriya Menon</div>
+                <div style="font-size:0.75rem;color:var(--text-muted)">Head of AI, Fintech Startup · Bengaluru</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="flat-card spotlight-card reveal" style="padding:var(--s6)" data-delay="160">
+            <div style="display:flex;gap:2px;margin-bottom:var(--s4)">
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+            </div>
+            <blockquote style="font-size:0.9375rem;line-height:1.7;color:var(--text-secondary);margin-bottom:var(--s5);font-style:italic">
+              "We migrated 14 workloads to a hybrid Kubernetes infrastructure with Vassu's DevOps team in 6 weeks — under budget and with zero production downtime. Their Terraform modules are production-grade."
+            </blockquote>
+            <div style="display:flex;align-items:center;gap:var(--s3);border-top:1px solid var(--rule);padding-top:var(--s4)">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(37,99,235,0.08);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:0.875rem;color:var(--blue);flex-shrink:0">A</div>
+              <div>
+                <div style="font-family:var(--font-display);font-weight:700;font-size:0.875rem;color:var(--text-primary)">Arjun Shah</div>
+                <div style="font-size:0.75rem;color:var(--text-muted)">VP Engineering, SaaS Company · Navi Mumbai</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="flat-card spotlight-card reveal" style="padding:var(--s6)" data-delay="240">
+            <div style="display:flex;gap:2px;margin-bottom:var(--s4)">
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star" style="color:#f59e0b;font-size:0.875rem"></i>
+              <i class="fa-solid fa-star-half-stroke" style="color:#f59e0b;font-size:0.875rem"></i>
+            </div>
+            <blockquote style="font-size:0.9375rem;line-height:1.7;color:var(--text-secondary);margin-bottom:var(--s5);font-style:italic">
+              "Vassu's AMC coverage for our 40-node datacenter in GIFT City has been flawless for 18 months. Their preventive maintenance reports catch failures before they happen. Highly recommended for BFSI-grade environments."
+            </blockquote>
+            <div style="display:flex;align-items:center;gap:var(--s3);border-top:1px solid var(--rule);padding-top:var(--s4)">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(234,88,12,0.08);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:0.875rem;color:var(--orange);flex-shrink:0">P</div>
+              <div>
+                <div style="font-family:var(--font-display);font-weight:700;font-size:0.875rem;color:var(--text-primary)">Priya Desai</div>
+                <div style="font-size:0.75rem;color:var(--text-muted)">IT Director, NBFC · GIFT City, Gandhinagar</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- ═══ FOOTER ═══ -->
     <footer class="footer">
       <div class="inner">
@@ -1714,6 +1795,7 @@
             <div class="footer-col-title">Company</div>
             <ul class="footer-links">
               <li><a href="./portfolio.html">Case Studies</a></li>
+              <li><a href="./blog.html">Blog &amp; Insights</a></li>
               <li><a href="./compliance-and-security.html">Compliance</a></li>
               <li><a href="./faq.html">FAQ</a></li>
               <li><a href="./contact-us.html">Contact</a></li>
@@ -1765,6 +1847,24 @@
       </a>
     </div>
 
-    <script src="./js/main.js?v=4.0.0"></script>
+    <script src="./js/main.js?v=5.0.0"></script>
+    <!-- Google Analytics (deferred for performance) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1893RGH1FW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1893RGH1FW');
+    </script>
+    <!-- Microsoft Clarity (deferred for performance) -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;
+        t.src='https://www.clarity.ms/tag/'+i;
+        y=l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t,y);
+      })(window,document,'clarity','script','xwyxun7vj0');
+    </script>
   </body>
 </html>
