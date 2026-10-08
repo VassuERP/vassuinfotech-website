@@ -92,7 +92,19 @@
   </url>
   <url>
     <loc>https://vassuinfotech.com/services/server-amc-support.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://vassuinfotech.com/services/refurbished-servers.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://vassuinfotech.com/services/server-components-spares.html</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>

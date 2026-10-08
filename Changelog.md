@@ -3,7 +3,161 @@
 All notable changes to the Vassu Infotech website project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to Section 8.1 of [RULES.md](file:///d:/public_html/RULES.md).
+and this project adheres to Section 8.1 of [RULES.md](file:///d:/VassuInfotech/vassuinfotech-website/RULES.md).
+
+## [Executive Enterprise Architecture Hero: 3-Pillar Clean Matrix Overhaul] - 2026-10-08, 12:20 IST
+
+### What changed
+- **Homepage Hero Section ([index.html](file:///d:/VassuInfotech/vassuinfotech-website/index.html))**:
+  - Replaced the dark slider container (`.hero-spec-deck`) and AI-style GPS coordinate bar with a pristine, bright, Swiss-architectural **Executive 3-Pillar Enterprise Matrix** (`.hero-pillars-grid`).
+  - Implemented 3 elevated white enterprise cards directly beneath the editorial lead and primary CTAs:
+    1. `01 // MULTI-VENDOR AMC`: **Server AMC & Support** (< 4 Hours on-site dispatch SLA, Dell PowerEdge, HPE ProLiant, and Lenovo systems backed by local Bodakdev cold spares).
+    2. `02 // RENTALS & GPU`: **Dedicated Rentals & GPU** (Zero Egress private cloud and bare-metal 1U-4U compute, NVIDIA H100/A100 AI racks with 24-48 hour rapid staging).
+    3. `03 // HARDWARE & SPARES`: **Refurbished & OEM Spares** (50%-70% CapEx savings vs OEM, 48-hour burn-in stress benchmarking, same-day dispatch on Xeon/EPYC CPUs, ECC RAM, NVMe).
+  - Maintained the clean 4-column base telemetry proof bar (`4-Hour SLA`, `Multi-Vendor`, `Bodakdev HQ`, `Air-Gapped`).
+  - Verified 0 em-dashes across all markup.
+- **CSS Design System Updates ([css/style.css](file:///d:/VassuInfotech/vassuinfotech-website/css/style.css))**:
+  - Added architectural styles for `.hero-editorial-lead`, `.hero-pillars-grid`, `.hero-pillar-card`, `.pillar-card-top`, `.pillar-num`, `.pillar-badge`, `.pillar-title`, `.pillar-highlight`, `.highlight-val`, `.highlight-lbl`, `.pillar-desc`, and `.pillar-link`.
+  - Added smooth hover elevations (`translateY(-4px)`), hairline emerald border transitions, and subtle diffused drop shadows.
+  - Full dark mode support for all pillar cards and metric highlights (`[data-theme="dark"]`).
+  - Removed deprecated dark slider rules (`.hero-spec-deck`, `.hero-deck-nav`, `.hero-deck-stage`, `.hero-deck-telemetry`).
+  - Updated responsive media queries: 3 columns on desktop, graceful single-column stacking below 860px and 639px.
+- **Interaction Engine ([js/main.js](file:///d:/VassuInfotech/vassuinfotech-website/js/main.js))**:
+  - Cleaned up obsolete slide interval timers (`initHeroVisualShowcase`).
+  - Integrated `.hero-pillar-card` into the interactive mouse spotlight tracker (`initSpotlightCards`).
+- **Documentation ([Context.md](file:///d:/VassuInfotech/vassuinfotech-website/Context.md))**:
+  - Updated hero layout pattern documentation.
+
+### Why
+- Direct response to user feedback requesting elimination of the dark cyber slider box in favor of a clean, aesthetically pleasing, non-AI-generic enterprise design.
+- Direct-links core revenue streams (AMC, Rentals/GPU, Hardware) immediately visible above the fold to enterprise buyers and CTOs.
+- Adheres strictly to RULES.md (zero em-dashes, Vanilla HTML/CSS/JS, no build tools).
+
+## [Anti-Slop Hero Overhaul: Concept C Kinetic Typographic Canvas & Hardware Spec Slider] - 2026-10-08, 12:05 IST
+
+### What changed
+- **Homepage Hero Overhaul ([index.html](file:///d:/VassuInfotech/vassuinfotech-website/index.html))**:
+  - Eliminated the 2-column SaaS box/card archetype, fake macOS window frame, traffic light dots, and floating glass bubbles.
+  - Implemented **Concept C: Kinetic Typographic Canvas with Panoramic Hardware Spec Slider**:
+    - **Architectural Datum Line (`.hero-datum-bar`)**: Technical monospaced coordinates (`23.0338° N, 72.5074° E // AHMEDABAD HQ`), guaranteed dispatch SLA (`< 4-HR ON-SITE DISPATCH // GIFT CITY & GUJARAT`), compliance rate (`99.98%`), and cold spares indicator (`1,200+ ACTIVE`).
+    - **Master Editorial Typography**: Bold, authoritative headline with tight letterspacing and zero fluff 17-word value proposition.
+    - **Panoramic Hardware Spec Deck (`.hero-spec-deck`)**: Wide-format hardware stage spanning the hero container with 3 technical mode selector tabs:
+      1. `01 // Server AMC & Fleet` (Dell PowerEdge & HPE ProLiant Fleet Maintenance, < 4-Hour Response SLA, Bodakdev HQ Spares Depot, L3 Certified Field Team).
+      2. `02 // Private GPU AI Compute` (Dedicated NVIDIA H100 / A100 AI Compute Racks, Air-Gapped Private Bare-Metal, Zero Cloud Egress Fees, Turnkey 24-48h Staging).
+      3. `03 // Refurbished & Spares` (Certified Pre-Owned Enterprise Nodes, 50%-70% CapEx Reduction, 48-Hour Burn-In Stress Test, Same-Day Dispatch).
+    - **Laser-Etched Telemetry HUD (`.hero-deck-telemetry`)**: Embedded directly into the base of each slide viewport with live status beacon and 4 technical specification cells.
+    - Preserved 4-column base telemetry proof bar (`4-Hour`, `Multi-Vendor`, `Bodakdev HQ`, `Air-Gapped`).
+- **CSS Design System Updates ([css/style.css](file:///d:/VassuInfotech/vassuinfotech-website/css/style.css))**:
+  - Added styles for `.hero-kinetic-canvas`, `.hero-datum-bar`, `.hero-editorial-kinetic`, `.hero-spec-deck`, `.hero-deck-nav`, `.hero-deck-tab`, `.hero-deck-stage`, `.hero-deck-telemetry`, and technical cells.
+  - Removed old boxed console and floating bubble badge CSS rules.
+  - Updated responsive media queries at 1024px and 640px.
+- **Interaction Engine ([js/main.js](file:///d:/VassuInfotech/vassuinfotech-website/js/main.js))**:
+  - Upgraded `initHeroVisualShowcase()` to drive the new `.hero-deck-tab` and `.hero-deck-slide` elements with auto-cycle every 6 seconds, hover pause on `.hero-spec-deck`, and instant manual tab activation.
+- **Documentation ([Context.md](file:///d:/VassuInfotech/vassuinfotech-website/Context.md))**:
+  - Updated layout pattern documentation to reflect Concept C.
+
+### Why
+- Direct response to user feedback: *"this looks too ai generated is there any way we can make this aesthetically pleasing without making the right side box thing and if there's any new type of ui we can experiment"*.
+- User selected Concept C via interactive prompt.
+- Replaces generic 2-column SaaS mockup tropes with authentic, serious industrial infrastructure aesthetics.
+
+## [Hero Section Architectural Redesign: Enterprise Infrastructure Console] - 2026-10-08, 11:50 IST
+
+### What changed
+- **Homepage Hero Redesign ([index.html](file:///d:/VassuInfotech/vassuinfotech-website/index.html))**:
+  - Replaced legacy visual card with high-precision **Enterprise Infrastructure Console** (`.hero-console-window`) featuring terminal titlebar, window controls, and live SLA beacon (`#hero-console-status-text`).
+  - Implemented 3 interactive hardware viewport modes:
+    1. *Server AMC & Multi-Vendor Fleet* (`#slide-amc`): Dell PowerEdge & HPE ProLiant racks, < 4-Hour On-Site SLA, Bodakdev HQ Spares Depot, L3 Certified Engineers.
+    2. *Private GPU Compute & AI Racks* (`#slide-gpu`): NVIDIA H100 / A100 AI Racks, Air-Gapped Private Deployment, Zero Egress Fees, 24-48 Hour Staging.
+    3. *Certified Refurbished & OEM Spares* (`#slide-refurb`): Refurbished Nodes & Spares Bank, 50%-70% CapEx Savings, 48-Hour Burn-In Testing, Same-Day Dispatch.
+  - Added embedded hardware telemetry HUD (`.hero-slide-telemetry-badge`) inside each slide card displaying live specs (SLA, Depot, Tier, Staging, Savings, Benchmarking).
+  - Positioned dual glass refraction status badges framing the top corners (`4-Hour On-Site SLA` and `Bodakdev Spares Depot`).
+  - Added pillar micro-strip below hero actions spotlighting the 3 primary revenue pillars.
+  - Upgraded base telemetry bar (`.hero-telemetry-bar`) with 4 high-contrast proof points (4-Hour SLA, Multi-Vendor Fleet, Bodakdev HQ Depot, Air-Gapped Compute).
+  - Scrubbed all 10 legacy em-dashes (`—`) across `index.html` down to 0, ensuring strict compliance with `RULES.md`.
+- **CSS Design System Updates ([css/style.css](file:///d:/VassuInfotech/vassuinfotech-website/css/style.css))**:
+  - Added styling for `.hero-console-window`, `.hero-console-header`, `.console-dot`, `.hero-console-title`, and `.hero-console-status`.
+  - Added styling for `.hero-slide-telemetry-badge`, tags (`.telemetry-tag-blue`, `.telemetry-tag-green`), and 3-column specs grid.
+  - Added styling for `.hero-pillars-strip`, `.hero-pillar-badge`, and `.hero-pillar-dot`.
+  - Updated responsive rules for `@media (max-width: 1023px)` and `@media (max-width: 639px)` for clean mobile viewport scaling and stacked actions.
+  - Ensured theme token consistency (`var(--surface-off)`, `var(--text-primary)`, `var(--surface-white)`) for seamless dark mode switching.
+- **Interaction Engine Upgrades ([js/main.js](file:///d:/VassuInfotech/vassuinfotech-website/js/main.js))**:
+  - Upgraded `initHeroVisualShowcase()` to synchronize active tabs, slide images, console status beacon, top and bottom badges, and ARIA attributes (`aria-selected`).
+  - Added hover pause functionality on `.hero-visual-stage` and timer restart on manual tab selection.
+- **Documentation ([Context.md](file:///d:/VassuInfotech/vassuinfotech-website/Context.md))**:
+  - Updated layout pattern documentation to reflect the new Enterprise Infrastructure Console.
+
+### Why
+- User request: *"i want you to redesign the hero section of this website"*.
+- Solves key design challenges: delivers an anti-slop, high-precision enterprise infrastructure aesthetic; spotlights core pillars (Server AMC, GPU Rentals, Refurbished & Spares); ensures 100dvh viewport fit; complies with zero em-dash rule and native vanilla architecture.
+
+## [Purge Unverified Certifications: ISO 27001 & SOC 2 Claims] - 2026-10-08, 10:48 IST
+
+### What changed
+- **Removed "ISO 27001 & SOC 2" Certification Card on Homepage ([index.html](file:///d:/VassuInfotech/vassuinfotech-website/index.html))**:
+  - Replaced unverified certification badge and card title with **"Enterprise Data Security"** to maintain symmetrical 4-column layout (`why-us-grid`).
+  - Updated card copy to focus on verified capabilities: *"Rigorous information security frameworks, air-gapped data handling, SEBI/RBI audit readiness, and continuous vulnerability monitoring."*
+  - Removed ISO 27001 reference from Cyber Shield Pro capability card description (`index.html`).
+- **Purged Unverified Certification References Site-Wide**:
+  - [`compliance-and-security.html`](file:///d:/VassuInfotech/vassuinfotech-website/compliance-and-security.html): Removed ISO 27001 and SOC 2 claims from meta description, `<title>`, Open Graph tags, main banner `<h1>`, and checklist items; replaced with *Enterprise ISMS Controls* and *Audit & Integrity Governance*.
+  - [`services.html`](file:///d:/VassuInfotech/vassuinfotech-website/services.html): Removed ISO 27001 reference from SLA FAQ card.
+  - [`services/custom-software-development.html`](file:///d:/VassuInfotech/vassuinfotech-website/services/custom-software-development.html): Replaced ISO 27001/SOC 2 claims with OWASP security guidelines and DPDP Act standards.
+  - [`services/cyber-shield-pro.html`](file:///d:/VassuInfotech/vassuinfotech-website/services/cyber-shield-pro.html): Purged ISO 27001 and SOC 2 references across meta description, JSON-LD Schema.org block, banner subtext, specs grid, and compliance checklist.
+  - [`services/data-center-architecture.html`](file:///d:/VassuInfotech/vassuinfotech-website/services/data-center-architecture.html): Replaced ISO 27001 ISMS & SOC 2 checklist title with *Physical Perimeter Security*.
+  - [`services/infrastructure-deployment.html`](file:///d:/VassuInfotech/vassuinfotech-website/services/infrastructure-deployment.html): Replaced ISO 27001 physical security standards mention with *enterprise physical security standards*.
+  - [`portfolio/document-audit-ai-engine.html`](file:///d:/VassuInfotech/vassuinfotech-website/portfolio/document-audit-ai-engine.html): Removed ISO 27001 references from cross-link anchor description and sidebar project metadata tag.
+  - [`Context.md`](file:///d:/VassuInfotech/vassuinfotech-website/Context.md): Updated sitemap description for `compliance-and-security.html`.
+
+### Why
+- User request: *"remove this certification from this website"* with attached screenshot of the `ISO 27001 & SOC 2` card.
+- Strict compliance with Hard Rule 2: *"Flag claims needing proof or correction and do not repeat them until confirmed: ... SOC 2, ISO 27001 (needs certificate page)"*.
+
+## [Enterprise Content Restructuring: 6 Core Revenue Pillars Spotlight] — 2026-10-08, 09:55 IST
+
+### What changed
+- **Restructured Core Revenue Architecture Across Entire Website**:
+  - Re-anchored the entire website around 6 core revenue and service pillars:
+    1. **Server AMC & Multi-Vendor Support** (`services/server-amc-support.html`): Multi-vendor Dell, HPE, and Lenovo server support with guaranteed 4-hour on-site response time backed by local Bodakdev cold spares inventory.
+    2. **Enterprise Server Rentals & Private GPU Compute** (`services/server-rental-ahmedabad.html`): Turnkey 1U–4U bare-metal compute and dedicated private GPU compute (NVIDIA A100/H100/RTX) for AI/ML workloads.
+    3. **New Enterprise Server Sales** (`services/global-hardware-supply.html`): Factory-direct OEM server procurement for Dell PowerEdge, HPE ProLiant, and Lenovo ThinkSystem with custom build-to-order sizing.
+    4. **Certified Refurbished Enterprise Servers** (`services/refurbished-servers.html`): Brand new dedicated service page covering pre-owned Dell R640/R740/R750, HPE DL360/DL380 Gen9/Gen10, and Lenovo SR650 with 5-stage testing, 48-hour burn-in stress benchmarking, and 50%–70% CapEx savings.
+    5. **Server Components & OEM Spares** (`services/server-components-spares.html`): Brand new dedicated service page covering Intel Xeon/AMD EPYC CPUs, DDR4/DDR5 ECC RAM, enterprise NVMe/SAS drives, PERC/SmartArray RAID cards, redundant PSUs, and caddies/rails with Bodakdev warehouse pickup and same-day emergency dispatch.
+    6. **Custom Software Engineering** (`services/custom-software-development.html`): Enterprise ERP, multi-tenant SaaS platforms, microservices architecture, and GIFT City financial integrations.
+  - Grouped secondary specialized solutions (Modules 07–14) under *"Specialized Infrastructure & Cloud Engineering"*.
+- **New Service Page Created: [services/refurbished-servers.html](file:///d:/VassuInfotech/vassuinfotech-website/services/refurbished-servers.html)**:
+  - Built with the 2026 Enterprise Bright Mode design system (`style.css?v=5.0.0`).
+  - Answer-first 40–60 word definitions under H2/H3 buyer questions.
+  - 5-stage refurbishment protocol (Visual & Thermal inspection, Ultrasonic cleaning, Firmware baseline, 48-hour burn-in, Packaging).
+  - Comparison table: Vassu Certified Refurbished vs. New OEM vs. Grey Market Used Hardware.
+  - 6 FAQs with concise answers, clear CTAs (Quote, WhatsApp, Bodakdev Inspection).
+  - Valid Schema.org JSON-LD graph (`Service`, `FAQPage`, `BreadcrumbList`).
+- **New Service Page Created: [services/server-components-spares.html](file:///d:/VassuInfotech/vassuinfotech-website/services/server-components-spares.html)**:
+  - Built with the 2026 Enterprise Bright Mode design system.
+  - 6 component category cards (CPUs, ECC RAM, NVMe/SAS Storage, RAID Controllers, Redundant PSUs, Caddies & Rails).
+  - Bodakdev warehouse pickup & same-day emergency courier logistics.
+  - Comparison table: Genuine OEM Pulls/Spares vs. Generic Third-Party Spares.
+  - 6 FAQs with concise answers, direct phone/WhatsApp dispatch CTAs.
+  - Valid Schema.org JSON-LD graph (`Service`, `FAQPage`, `BreadcrumbList`).
+- **Comprehensive Upgrades to [services/server-amc-support.html](file:///d:/VassuInfotech/vassuinfotech-website/services/server-amc-support.html)**:
+  - Upgraded with detailed AEO/GEO answer blocks, 4-hour SLA logistics, Bodakdev cold spares inventory specifications, Comprehensive vs Non-Comprehensive comparison table, 4-stage incident escalation workflow, TCO worked cost formula, FAQs, and Schema.org markup.
+- **Homepage ([index.html](file:///d:/VassuInfotech/vassuinfotech-website/index.html)) & Catalog Hub ([services.html](file:///d:/VassuInfotech/vassuinfotech-website/services.html))**:
+  - Restructured header desktop dropdown into "Core Server Solutions" (01–06) and "Specialized Infrastructure & Cloud" (07–12).
+  - Updated homepage hero kicker to `ENTERPRISE SERVER HARDWARE // AMC // RENTALS // CUSTOM SOFTWARE`.
+  - Re-ordered capabilities bento matrix and filter pills to prominently lead with the 6 priority pillars.
+  - Restructured `services.html` into two distinct sections: Core Server & Software Solutions vs Specialized Engineering.
+- **Synchronized Sidebar Solutions Directory Across All 16 Service Subpages**:
+  - Standardized `.sidebar-menu` across all service pages in `services/` to reflect the updated 14-item highlighted ordering with exact active state per page.
+- **Standardized Footer & Purged Unverified Badges Site-Wide**:
+  - Standardized footer links into `Server Hardware & AMC`, `Software & Engineering`, and `Company` across all 32 HTML pages (including `blog.html` and the 5 technical blog posts).
+  - Completely purged unverified `"Google Preferred Source // Verified Entity"` badges from all HTML files per Hard Rule 2.
+- **SEO & Discovery Updates**:
+  - Updated [sitemap.xml](file:///d:/VassuInfotech/vassuinfotech-website/sitemap.xml) with URLs for `services/refurbished-servers.html` and `services/server-components-spares.html`.
+  - Updated [llm.txt](file:///d:/VassuInfotech/vassuinfotech-website/llm.txt) to reflect the 6 core pillars, revised crawl matrix, and factual AEO/GEO answers.
+  - Updated [Context.md](file:///d:/VassuInfotech/vassuinfotech-website/Context.md) to document the new 25-page architecture and revenue hierarchy.
+
+### Why
+- User request: *"implement content restructuring for whole website in which we are highlighting these servicews: Server AMC, Server Rental, Server Selling, Refurbished Server selling and Software development along with server components selling"*.
+- Strict adherence to [RULES.md](file:///d:/VassuInfotech/vassuinfotech-website/RULES.md) (Section 8.1 documentation obligations, Section 2 accuracy and verifiability).
 
 ## [Headquarters Media Asset Update] — 2026-08-26, 17:25 IST
 
