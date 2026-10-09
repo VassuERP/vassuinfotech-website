@@ -5,6 +5,29 @@ All notable changes to the Vassu Infotech website project will be documented in 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to Section 8.1 of [RULES.md](file:///d:/VassuInfotech/vassuinfotech-website/RULES.md).
 
+## [High-Intent Local SEO & AEO Expansion: Server Repair & Server Supplier Ahmedabad Guides] - 2026-10-09, 12:30 IST
+
+### What changed
+- **Targeted Keyword Research & Analysis**:
+  - Researched search intent, buyer queries, diagnostic codes, and competitor offerings for `server repair in ahmedabad` and `server supplier in ahmedabad`.
+  - Identified high-conversion semantic clusters: emergency 4-hour SLA dispatch, Dell PowerEdge and HPE ProLiant component diagnosis, out-of-warranty recovery, 1U/2U/4U rack server sizing, and 50%-70% CapEx savings with certified refurbished nodes.
+- **New Technical Blog Guides**:
+  - Created [blog/server-repair-services-ahmedabad-guide.html](file:///d:/VassuInfotech/vassuinfotech-website/blog/server-repair-services-ahmedabad-guide.html): "Enterprise Server Repair in Ahmedabad: Troubleshooting, Component Replacement & On-Site SLA Guide". Includes 4-phase repair workflow, diagnostic telemetry matrix, motherboard/RAID replacement protocol, 6-question FAQ schema, and 4-hour dispatch hotline CTA.
+  - Created [blog/enterprise-server-supplier-ahmedabad-guide.html](file:///d:/VassuInfotech/vassuinfotech-website/blog/enterprise-server-supplier-ahmedabad-guide.html): "Enterprise Server Supplier in Ahmedabad: Complete Buyer's Guide for Dell, HPE & Refurbished Hardware". Includes supplier evaluation checklist, form-factor comparison table, new OEM vs refurbished TCO analysis, BTO staging protocol, and 6-question FAQ schema.
+- **Blog Hub Updates ([blog.html](file:///d:/VassuInfotech/vassuinfotech-website/blog.html))**:
+  - Added both guides to the top of the technical articles grid with category tags, reading times, and direct internal links.
+  - Updated article counter indicator to 7 technical articles. Fixed encoding in header subtitle.
+- **Homepage Integration ([index.html](file:///d:/VassuInfotech/vassuinfotech-website/index.html))**:
+  - Naturally incorporated server repair and server supplier semantics into the hero subtitle and pillar descriptions without keyword stuffing.
+  - Updated Capabilities matrix rows for Server AMC & Support, Enterprise Server Supplier, and Server Components & Spares.
+  - Added a dedicated "Technical Knowledge Base & Insights" curated guide grid directly linking to the new guides and passing internal link equity.
+  - Enhanced JSON-LD FAQPage schema with 2 high-intent questions for generative AI and voice search optimization.
+- **Search Engine Discovery & AI Context ([sitemap.xml](file:///d:/VassuInfotech/vassuinfotech-website/sitemap.xml) & [llm.txt](file:///d:/VassuInfotech/vassuinfotech-website/llm.txt))**:
+  - Added both new blog guide URLs to `sitemap.xml` with priority 0.80 and updated lastmod timestamps for homepage and blog.
+  - Added crawl paths and concise factual AEO answers to `llm.txt` for AI answer engines.
+- **Strict Compliance Verification**:
+  - Verified 0 em-dashes across all modified and newly created files.
+
 ## [Executive Enterprise Architecture Hero: 3-Pillar Clean Matrix Overhaul] - 2026-10-08, 12:20 IST
 
 ### What changed

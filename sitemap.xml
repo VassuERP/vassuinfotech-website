@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vassuinfotech.com/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://vassuinfotech.com/blog.html</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -177,6 +177,18 @@
   <url>
     <loc>https://vassuinfotech.com/blog/dedicated-server-rental-ahmedabad-guide.html</loc>
     <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://vassuinfotech.com/blog/server-repair-services-ahmedabad-guide.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://vassuinfotech.com/blog/enterprise-server-supplier-ahmedabad-guide.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>

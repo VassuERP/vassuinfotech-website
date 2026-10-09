@@ -45,7 +45,7 @@ Secondary and specialized engineering solutions are grouped under **"Specialized
   - Hub & Landing Pages: Executive Enterprise Architecture Hero with high-clarity typography and 3-Pillar Enterprise Matrix (`.hero-pillars-grid`) directly linking to Server AMC (< 4 Hours SLA), Dedicated Rentals & GPU (Zero Egress Private Compute), and Refurbished & OEM Spares (50%-70% CapEx Savings), followed by 4-column base telemetry proof bar, interactive capabilities bento matrix leading with the 6 core pillars, GPU AI compute rack bento, floating case study glass cards, certified technology ecosystem shields, client trust 6-card interactive showcase grid with verified deployment metrics, interactive FAQ accordion, high-impact cyber console CTA banner.
   - Detail Pages (16 Services + 2 Case Studies): Dedicated 2-column layout (`.detail-layout-grid`) with light breadcrumb banner (`.detail-banner`), key metric strip (`.metric-strip-grid`), hero media (`.detail-hero-media`), engineering specification matrix (`.spec-grid`, `.spec-box`), feature checklists (`.flat-checklist`), SLA highlight banners (`.sla-banner-card`), and sticky directory sidebar with active state highlighting (`.detail-sidebar-wrap`, `.sidebar-panel`, `.sidebar-cta-box`).
 
-## Complete File & Directory Inventory (25 HTML Pages)
+## Complete File & Directory Inventory (27 HTML Pages)
 
 ```
 d:\VassuInfotech\vassuinfotech-website\
@@ -54,6 +54,14 @@ d:\VassuInfotech\vassuinfotech-website\
 ├── js/
 │   └── main.js              # Native Vanilla JS interaction engine (drawer, scroll, accordion, particles, typewriter, counters, spotlight, parallax)
 ├── images/                  # High-resolution datacenter, server hardware, client logos, and solution photography
+├── blog/                    # 7 In-depth technical guides (SEO/AEO/GEO high-intent content)
+│   ├── server-repair-services-ahmedabad-guide.html     # Enterprise Server Repair in Ahmedabad Guide (4-hr SLA & Diagnostics)
+│   ├── enterprise-server-supplier-ahmedabad-guide.html # Enterprise Server Supplier in Ahmedabad Guide (Dell/HPE & Refurbished)
+│   ├── server-amc-vs-ad-hoc-support-ahmedabad.html     # Server AMC vs Ad-Hoc Support in Ahmedabad
+│   ├── dedicated-server-rental-ahmedabad-guide.html    # Dedicated Server Rental in Ahmedabad Guide
+│   ├── gpu-vs-cpu-server-for-ai-training-india.html    # GPU vs CPU Server Rentals for AI Training Guide
+│   ├── on-premise-vs-cloud-server-india-enterprise.html# On-Premise vs Cloud Server Guide
+│   └── vmware-to-proxmox-migration-india-guide.html    # VMware to Proxmox Migration Guide
 ├── portfolio/               # Case study detail pages
 │   ├── document-audit-ai-engine.html             # AI Document Audit & OCR Engine Case Study
 │   └── fintech-virtualization-deployment.html    # GIFT City Fintech Virtualization Cluster Case Study
